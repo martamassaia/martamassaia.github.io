@@ -564,11 +564,23 @@ a.contact-value:hover { color: var(--cream); }
     border-color 0.2s ease,
     opacity 0.2s ease;
 }
-
+.news-text a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    opacity 0.2s ease;
+}
 .about-right a:hover,
 .pub-title a:hover,
 .pub-meta a:hover,
 .talk-body a:hover {
+  color: var(--accent-soft);
+  border-bottom-color: var(--accent-soft);
+}
+.news-text a:hover {
   color: var(--accent-soft);
   border-bottom-color: var(--accent-soft);
 }
