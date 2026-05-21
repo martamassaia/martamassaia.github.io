@@ -432,7 +432,44 @@ section:nth-child(even) { background: var(--section-bg); }
   color: var(--ink-muted);
   line-height: 1.4;
 }
+/* ---------- NEWS ---------- */
+.news-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 2rem;
+}
 
+.news-item {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  gap: 2rem;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid var(--line-light);
+}
+
+.news-item:last-child {
+  border-bottom: none;
+}
+
+.news-date {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  padding-top: 0.2rem;
+}
+
+.news-text {
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+
+.news-text em {
+  color: var(--ink);
+}
 /* ---------- CONTACT ---------- */
 #contact { background: var(--ink); color: var(--cream); }
 #contact .section-label { color: var(--accent-soft); }
@@ -553,7 +590,10 @@ a.contact-value:hover { color: var(--cream); }
   .about-facts { gap: 1.5rem; }
   .pub-item { grid-template-columns: 70px 1fr; }
   .contact-item { grid-template-columns: 1fr; gap: 0.3rem; }
-
+   .news-item {
+  grid-template-columns: 1fr;
+  gap: 0.4rem;
+}
   .nav-links {
     display: none;
     flex-direction: column;
