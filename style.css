@@ -514,7 +514,27 @@ a.contact-value:hover { color: var(--cream); }
   letter-spacing: 0.08em;
   color: rgba(245, 241, 235, 0.3);
 }
+/* ---------- INLINE LINKS ---------- */
+.about-right a,
+.pub-title a,
+.pub-meta a,
+.talk-body a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    opacity 0.2s ease;
+}
 
+.about-right a:hover,
+.pub-title a:hover,
+.pub-meta a:hover,
+.talk-body a:hover {
+  color: var(--accent-soft);
+  border-bottom-color: var(--accent-soft);
+}
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 900px) {
   .about-grid { grid-template-columns: 1fr; }
